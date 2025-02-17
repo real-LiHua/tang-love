@@ -1,6 +1,6 @@
 let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
-let eggButton = document.getElementById("no");
+let eggButton = document.getElementById("egg");
 let questionText = document.getElementById("question");
 let mainImage = document.getElementById("mainImage");
 

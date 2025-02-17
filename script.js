@@ -1,5 +1,6 @@
 let yesButton = document.getElementById("yes");
 let noButton = document.getElementById("no");
+let eggButton = document.getElementById("egg");
 let questionText = document.getElementById("question");
 let mainImage = document.getElementById("mainImage");
 
@@ -61,7 +62,7 @@ const loveTest = `!!!喜欢你!! ( >᎑<)♡︎ᐝ  ${
   username ? `${safeUsername}  ♡︎ᐝ(>᎑< )` : ""
 }`;
 
-yesButton.addEventListener("click", function () {
+function ok() {
   // 先创建基础 HTML 结构
   document.body.innerHTML = `
         <div class="yes-screen">
@@ -75,4 +76,7 @@ yesButton.addEventListener("click", function () {
 
   // 禁止滚动，保持页面美观
   document.body.style.overflow = "hidden";
-});
+};
+
+yesButton.addEventListener("click", ok);
+eggButton.addEventListener("click", ok);
